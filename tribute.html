@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>TRIBUTE PAGE</title>
+  </head>
+  <body>
+
+    <div id="custom-alert">
+        You will be redirected to a new page. Do you want to continue?
+        <button onclick="redirect()">OK</button>
+        <button onclick="closeAlert()">Cancel</button>
+    </div>
+    <main id="main">
+      <p id="title">Dr. Lavu Rathiah</p>
+      <div id="img-div">
+        <img id="image" src="lavu.jpg" alt="Lavu Rathiah">
+         <div id="caption">
+            Dr. Lavu Rathiah,founder of Vignan's Institute of Information Technology
+        </div>
+      </div>
+        <div id="info">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>Lavu Rathiah</strong> was an influential social reformer and community leader known for his relentless dedication to improving the lives of marginalized communities in India. Born in Guntur, he spent much of his life advocating for education, healthcare, and empowerment for underprivileged groups.
+                 <br><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;<strong>Lavu Rathiah's</strong>innovative approaches to community development have inspired countless individuals and organizations to take action toward social justice. Rathiah was instrumental in establishing several educational initiatives that have provided access to leaming for thousands of children.
+                 <br><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;<strong>Lavu Rathiah</strong> believed that education is the key to breaking the cycle of poverty and worked tirelessly to promote awareness about its importance. In addition to his educational efforts, Lavu Rathiah championed healthcare initiatives, ensuring that underserved populations received the medical attention they deserved. His commitment to service earned him numerous accolades, but he remained humble, always crediting the community members he worked with for their resilience and strength.
+                 <br><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;<strong>Lavu Rathiah's</strong> legacy lives on through the many lives he touched and the movements he inspired. His work continues to serve as a beacon of hope for those seeking to create positive change in their communities.
+            </p>
+        </div>
+       <div id="Rathiah_link">To Learn more about Lavu Rathiah, <a id="tribute-link" onclick="showAlert(event)" href="https://www.bing.com/ck/a?!&&p=00be3f9a01886272JmltdHM9MTcyOTAzNjgwMCZpZ3VpZD0yMDJjZjIyMi1iMmFlLTZlMGMtMmY0ZS1lNmQwYjM1NjZmYTcmaW5zaWQ9NTIwNQ&ptn=3&ver=2&hsh=3&fclid=202cf222-b2ae-6e0c-2f4e-e6d0b3566fa7&psq=lavu+rathaiah+wiki&u=a1aHR0cHM6Ly90ZS53aWtpcGVkaWEub3JnL3dpa2kvJUUwJUIwJUIyJUUwJUIwJUJFJUUwJUIwJUI1JUUwJUIxJTgxXyVFMCVCMCVCMCVFMCVCMCVBNCVFMCVCMSU4RCVFMCVCMCVBNCVFMCVCMCVBRiVFMCVCMSU4RCVFMCVCMCVBRg&ntb=1" target="_blank">Click Here</a></p></div>
+    </main>
+    
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(135deg,rgb(125, 125, 224),rgb(84, 239, 84),rgb(245, 124, 31));
+            margin: 0;
+            padding: 20px;
+            background-size: cover;
+        }
+        .s{
+            font-size: 20px;
+        }
+        #main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
+        #title {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            border: 2px solid rgb(117, 112, 112);
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: linear-gradient(135deg,rgb(125, 125, 224),rgb(84, 239, 84),rgb(245, 124, 31));
+            max-width: 350px;
+            margin: auto
+        }
+
+        #img-div {
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #image {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        #caption {
+            font-style: italic;
+            color: #555;
+        }
+
+        #info {
+            
+            margin-left: 20px;
+            margin-right: 20px;
+            line-height: 1.6;
+        }
+
+        #tribute-link {
+            color: rgb(77, 77, 248);
+            text-decoration: none;
+        }
+
+        #tribute-link:hover {
+            text-decoration: underline;
+        }
+        #Rathiah_link{
+            display: inline;
+            white-space: nowrap;
+            margin: 20px;
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #000000;
+            
+        }
+
+        #custom-alert {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        #custom-alert button {
+            margin-left: 15px;
+        }
+    </style>
+
+<script>
+    function showAlert(event) {
+            event.preventDefault();
+            document.getElementById("custom-alert").style.display = "block";
+        }
+
+        function closeAlert() {
+            document.getElementById("custom-alert").style.display = "none";
+        }
+
+        function redirect() {
+            closeAlert();
+            window.open("https://www.bing.com/ck/a?!&&p=00be3f9a01886272JmltdHM9MTcyOTAzNjgwMCZpZ3VpZD0yMDJjZjIyMi1iMmFlLTZlMGMtMmY0ZS1lNmQwYjM1NjZmYTcmaW5zaWQ9NTIwNQ&ptn=3&ver=2&hsh=3&fclid=202cf222-b2ae-6e0c-2f4e-e6d0b3566fa7&psq=lavu+rathaiah+wiki&u=a1aHR0cHM6Ly90ZS53aWtpcGVkaWEub3JnL3dpa2kvJUUwJUIwJUIyJUUwJUIwJUJFJUUwJUIwJUI1JUUwJUIxJTgxXyVFMCVCMCVCMCVFMCVCMCVBNCVFMCVCMSU4RCVFMCVCMCVBNCVFMCVCMCVBRiVFMCVCMSU4RCVFMCVCMCVBRg&ntb=1", '_blank');
+        }
+  </script>
+  </body>
+  </html>
